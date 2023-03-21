@@ -458,6 +458,13 @@
         },
         "value": {
           "description": "overrides any reading & parsing. Instead, just calculates function specified in value and returns the result as this instance. Has many purposes"
+        },
+        "valid": {
+          "anyOf": [
+            { "type": "number" },
+            { "type": "object" }
+	  ],
+          "description": "allow the compiler to validate codegen"
         }
       },
       "patternProperties": {
