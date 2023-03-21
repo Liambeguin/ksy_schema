@@ -265,7 +265,12 @@
               ]
             }
           ]
-        }
+        },
+	"bit-endian": {
+          "description": "specifies the default parsing direction (bit endianness) of bit-sized integers (run-time switching is not supported).\n\nLike meta/endian, meta/bit-endian also applies to bX attributes in the current type and all subtypes, but it can be overridden using the le/be suffix (bXle/bXbe) for the individual bit integers.",
+	  "default": "be",
+	  "enum": [ "le", "be" ]
+	}
       },
       "patternProperties": {
         "^-.*$": true
